@@ -35,7 +35,7 @@ const todo: TodoPreview = {
 type MyOmit<T, K> = { [P in keyof T]: T[P] }
 ```
 
-Залишається відфільтрувати ті властивості, які необхідно залишити в результуючому об'єкті, для цього використаємо [Перепризначення ключів в типах співставлення (mapped types)](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-1.html#key-remapping-in-mapped-types):
+Залишається відфільтрувати ті властивості, які необхідно залишити в результуючому об'єкті, для цього використаємо [перепризначення ключів в типах співставлення (mapped types)](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-4-1.html#key-remapping-in-mapped-types):
 
 ```typescript
 type MyOmit<T, K> = { [P in keyof T as P extends K ? never : P]: T[P] }

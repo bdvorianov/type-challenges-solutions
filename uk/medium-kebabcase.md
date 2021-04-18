@@ -8,7 +8,7 @@ tags: template-literal
 
 ## Завдання
 
-Привести рядок доформату `kebab-case`.
+Привести рядок до формату `kebab-case`.
 Наприклад:
 
 ```typescript
